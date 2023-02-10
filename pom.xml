@@ -24,6 +24,14 @@
                 <role>developer</role>
             </roles>
         </developer>
+        <developer>
+            <id>gabrielvcg</id>
+            <name>Gabriel</name>
+            <email>gabvacgoy@alum.us.es</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
 
     </developers>
 
