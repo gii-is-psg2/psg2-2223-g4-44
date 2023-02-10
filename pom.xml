@@ -14,6 +14,19 @@
     </parent>
     <name>petclinic</name>
 
+    <developers>
+    
+        <developer>
+            <id>ignwarmur</id>
+            <name>Ignacio</name>
+            <email>ignwarmur@alum.us.es</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+
+    </developers>
+
     <properties>
 
         <!-- Generic properties -->
