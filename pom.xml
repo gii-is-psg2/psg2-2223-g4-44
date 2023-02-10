@@ -24,6 +24,35 @@
         </developer>
     </developers>
 
+    <developers>
+    
+        <developer>
+            <id>albperleo</id>
+            <name>Alberto Perea León</name>
+            <email>albperleo@alum.us.es</email>
+            <roles>
+                <role>Scrum Master</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>ignwarmur</id>
+            <name>Ignacio</name>
+            <email>ignwarmur@alum.us.es</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>gabrielvcg</id>
+            <name>Gabriel</name>
+            <email>gabvacgoy@alum.us.es</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+
+    </developers>
+
     <properties>
 
         <!-- Generic properties -->
