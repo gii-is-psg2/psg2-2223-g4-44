@@ -13,6 +13,16 @@
         <version>2.2.4.RELEASE</version>
     </parent>
     <name>petclinic</name>
+    <developers>
+        <developer>
+            <id>albperleo</id>
+            <name>Alberto Perea León</name>
+            <email>albperleo@alum.us.es</email>
+            <roles>
+                <role>Scrum Master</role>
+            </roles>
+        </developer>
+    </developers>
 
     <properties>
 
