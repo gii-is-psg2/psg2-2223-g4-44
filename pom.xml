@@ -13,7 +13,9 @@
         <version>2.2.4.RELEASE</version>
     </parent>
     <name>petclinic</name>
+
     <developers>
+    
         <developer>
             <id>albperleo</id>
             <name>Alberto Perea León</name>
@@ -22,10 +24,6 @@
                 <role>Scrum Master</role>
             </roles>
         </developer>
-    </developers>
-
-    <developers>
-    
         <developer>
             <id>ignwarmur</id>
             <name>Ignacio</name>
