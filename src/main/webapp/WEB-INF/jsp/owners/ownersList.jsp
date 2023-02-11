@@ -6,6 +6,14 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="owners">
+
+    <style>
+        .table>thead>tr>th {
+            background-color: lightgreen;
+            color:#34302D;
+        }
+    </style>
+
     <h2>Owners</h2>
 
     <table id="ownersTable" class="table table-striped">
