@@ -14,8 +14,8 @@
 
     <center><p style="color: black"><font SIZE="2">
 
-        Bienvenidos, 
-desde la Clinica Veterinaria Bonn queremos brindar un trato diferencial y personalizado a su mascota, mas de 15 años de experiencia nos avalan. Encontrara nuestra clinica veterinaria en Madrid centro, en el corazon de Parque de las Avenidas, en la Avenida de Bonn numero 12.
+        Bienvenidos,
+desde la Clinica Veterinaria Bonn queremos brindar un trato diferencial y personalizado a su mascota, mas de 15 anyos de experiencia nos avalan. Encontrara nuestra clinica veterinaria en Madrid centro, en el corazon de Parque de las Avenidas, en la Avenida de Bonn numero 12.
 </p>
     </font></center><br/>
 
