@@ -2,10 +2,10 @@
 - Fecha: 15/02/2023
 - Personas presentes:
     - Alberto Perea León
-    - Alejandro
-    - Gabriel Vacaro
-    - Ignacio Warleta
-    - Antonio
+    - Alejandro Corral Gonzalez
+    - Gabriel María Vacaro Goytia
+    - Ignacio Warleta Murcia
+    - Antonio José López Cubiles
 
 
 ## Introducción
