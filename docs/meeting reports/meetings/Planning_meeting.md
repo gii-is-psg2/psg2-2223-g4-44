@@ -46,6 +46,3 @@ Asignación de las tareas del sprint:
   - e: Gabriel
 - A2.9: Alberto e Ignacio
 - A2.10: Alejandro (provisional)
-
-## Resumen
-
