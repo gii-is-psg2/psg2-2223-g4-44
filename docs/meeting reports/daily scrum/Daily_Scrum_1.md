@@ -2,17 +2,10 @@
 - Fecha: 15/02/2023
 - Personas presentes:
     - Alberto Perea León
-<<<<<<< HEAD:docs/meeting reports/daily scrum/Daily_Scrum_1.md
     - Alejandro Corral Gonzalez
     - Gabriel María Vacaro Goytia
     - Ignacio Warleta Murcia
     - Antonio José López Cubiles
-=======
-    - Alejandro Corral González
-    - Gabriel Vacaro Goytia
-    - Ignacio Warleta Murcia
-    - Antonio Lopez Cubiles
->>>>>>> a9f125c69509eb6542afb5fd9d87b8d7863bd13c:docs/Daily Scrum/Daily_Scrum_1.md
 
 
 ## Introducción

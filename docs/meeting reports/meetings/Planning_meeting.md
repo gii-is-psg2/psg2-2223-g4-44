@@ -46,3 +46,6 @@ Asignación de las tareas del sprint:
   - e: Gabriel
 - A2.9: Alberto e Ignacio
 - A2.10: Alejandro (provisional)
+
+- Fecha de entrega: 03/03/2023
+- Fecha de primera revisión: 27/02/2023
