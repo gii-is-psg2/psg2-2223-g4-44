@@ -1,6 +1,6 @@
 # Daily Scrum 1
 - Fecha: 15/02/2023
-- Personas presentes:
+- Developers presentes:
     - Alberto Perea León
     - Alejandro Corral Gonzalez
     - Gabriel María Vacaro Goytia
