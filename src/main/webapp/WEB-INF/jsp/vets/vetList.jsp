@@ -7,6 +7,7 @@
 <petclinic:layout pageName="vets">
     <h2>Veterinarians</h2>
 
+    </table>
     <table id="vetsTable" class="table table-striped">
         <thead>
         <tr>
@@ -31,11 +32,19 @@
         </tbody>
     </table>
 
+    <sec:authorize access="hasAuthority('admin')">
+		<a class="btn btn-default" href='<spring:url value="/vets/new" htmlEscape="true"/>'>Add Vet</a>
+    </sec:authorize>
+
+    
+
     <table class="table-buttons">
         <tr>
             <td>
+                <br>
                 <a href="<spring:url value="/vets.xml" htmlEscape="true" />">View as XML</a>
             </td>            
         </tr>
     </table>
+
 </petclinic:layout>
