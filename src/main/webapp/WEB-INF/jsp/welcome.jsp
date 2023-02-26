@@ -28,7 +28,7 @@ Basandonos en este principio de prevencion, destacamos tambien la importancia de
 
     <center><p style="color: black"><font SIZE="2">
 
-Dentro del servicio de consulta llevamos a cabo la implantacion de microchip, basico para la seguridad de los animales. Paralelamente, contamos con las mas completas analiticas de orina y sangre, de este modo respaldamos de manera solida las revisiones periodicas, que a modo de prevencion, logran que su perro o gato pueda disfrutar de una vida en plena salud.
+Dentro del servicio de consulta llevamos a cabo la implantacion de microchips, basico para la seguridad de los animales. Paralelamente, contamos con las mas completas analiticas de orina y sangre, de este modo respaldamos de manera solida las revisiones periodicas, que a modo de prevencion, logran que su perro o gato pueda disfrutar de una vida en plena salud.
 
 La alimentacion es otro de los pilares en los cuales debemos basarnos para asegurar una vida saludable a su mascota. En Clinica Veterinaria Bonn le ofrecemos un asesoramiento nutricional especifico para cada mascota en funcion de sus necesidades, contando con piensos de alta gama y dietas especificas para cada caso.</p>
     </font></center><br/>
