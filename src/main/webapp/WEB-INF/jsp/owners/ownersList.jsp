@@ -7,6 +7,8 @@
 
 <petclinic:layout pageName="owners">
 
+    <body style="background: #F5CBA7">
+
     <style>
         .table>thead>tr>th {
             background-color: lightgreen;
@@ -64,4 +66,6 @@
         </c:forEach>
         </tbody>
     </table>
+
+    </body>
 </petclinic:layout>

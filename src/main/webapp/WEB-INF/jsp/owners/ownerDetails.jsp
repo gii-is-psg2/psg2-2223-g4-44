@@ -6,6 +6,8 @@
 
 <petclinic:layout pageName="owners">
 
+    
+
     <h2>Owner Information</h2>
 
 
@@ -93,5 +95,6 @@
 
         </c:forEach>
     </table>
+
 
 </petclinic:layout>

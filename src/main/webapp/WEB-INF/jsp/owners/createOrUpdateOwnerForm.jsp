@@ -7,6 +7,8 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="owners">
+
+    <body style="background: #F5CBA7">
     <h2>
         <c:if test="${owner['new']}">New </c:if> Owner
     </h2>
@@ -33,4 +35,5 @@
             </div>
         </div>
     </form:form>
+    </body>
 </petclinic:layout>

@@ -5,9 +5,11 @@
 <!-- %@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %-->  
 
 <petclinic:layout pageName="home">
+
+<body style="background: #F5CBA7">
     
 
-    <center><p style="color: rgb(11, 18, 210)"><font SIZE="5">
+    <center><p style="color: rgb(149, 116, 32)"><font SIZE="5">
         Welcome to the PSG2-2223-G4-44 Petclinic
     </font>
     
@@ -33,6 +35,7 @@ Dentro del servicio de consulta llevamos a cabo la implantacion de microchip, ba
 La alimentacion es otro de los pilares en los cuales debemos basarnos para asegurar una vida saludable a su mascota. En Clinica Veterinaria Bonn le ofrecemos un asesoramiento nutricional especifico para cada mascota en funcion de sus necesidades, contando con piensos de alta gama y dietas especificas para cada caso.</p>
     </font></center><br/>
 
+    
     <div class="row">
         <div class="col-md-12">
             <spring:url value="/resources/images/patano1.jpg" htmlEscape="true" var="petsImage"/>
@@ -40,5 +43,6 @@ La alimentacion es otro de los pilares en los cuales debemos basarnos para asegu
         </div>
     </div>
 
+</body>
 
 </petclinic:layout>

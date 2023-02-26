@@ -10,6 +10,8 @@
 
 <petclinic:layout pageName="owners">
 
+    <body style="background: #F5CBA7">
+
     <h2>Find Owners</h2>
 
     
@@ -36,5 +38,7 @@
     <sec:authorize access="hasAuthority('admin')">
 		<a class="btn btn-default" href='<spring:url value="/owners/new" htmlEscape="true"/>'>Add Owner</a>
 	</sec:authorize>
+
+    </body>
 	
 </petclinic:layout>

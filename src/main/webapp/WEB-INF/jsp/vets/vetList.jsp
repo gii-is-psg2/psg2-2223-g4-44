@@ -5,6 +5,7 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="vets">
+    <body style="background: #F5CBA7">   
     <h2>Veterinarians</h2>
 
     <table id="vetsTable" class="table table-striped">
@@ -38,4 +39,5 @@
             </td>            
         </tr>
     </table>
+    </body>
 </petclinic:layout>
