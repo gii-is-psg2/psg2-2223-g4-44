@@ -1,7 +1,5 @@
 package org.springframework.samples.petclinic.hotel;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.Positive;
@@ -18,6 +16,6 @@ import lombok.Setter;
 public class Hotel extends NamedEntity {
     
     @Positive
-    private List<Integer> floors;
+    private Integer floors;
 
 }

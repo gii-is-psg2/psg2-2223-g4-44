@@ -1,5 +1,6 @@
 package org.springframework.samples.petclinic.hotel.room;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -18,6 +19,7 @@ import lombok.Setter;
 public class Room extends BaseEntity {
 
     @Positive
+    @Column(unique = true)
     private Integer roomNumber;
 
     @Positive

@@ -4,8 +4,6 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
-import org.springframework.samples.petclinic.hotel.HotelRepository;
-import org.springframework.samples.petclinic.hotel.room.RoomRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,16 +11,10 @@ import org.springframework.transaction.annotation.Transactional;
 public class BookingService {
     
     private BookingRepository bookingRepository;
-    private RoomRepository roomRepository;
-	private HotelRepository hotelRepository;
 
     @Autowired
-    public BookingService(BookingRepository bookingRepository,
-        RoomRepository roomRepository, 
-        HotelRepository hotelRepository) {
+    public BookingService(BookingRepository bookingRepository) {
         this.bookingRepository = bookingRepository;
-		this.roomRepository = roomRepository;
-		this.hotelRepository = hotelRepository;
 	}
 
     @Transactional(readOnly = true)
@@ -33,5 +25,10 @@ public class BookingService {
     @Transactional(readOnly = true)
     public Collection<Booking> findAll() throws DataAccessException {
         return bookingRepository.findAll();
+    }
+
+    @Transactional
+    public Booking save(Booking booking){
+        return bookingRepository.save(booking);
     }
 }
