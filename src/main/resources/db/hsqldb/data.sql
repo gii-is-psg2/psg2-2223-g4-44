@@ -83,3 +83,6 @@ INSERT INTO visits(id,pet_id,visit_date,description) VALUES (4, 7, '2013-01-04',
 INSERT INTO hotel(id, name, floors) VALUES (1, 'Pet Hotel', 5);
 
 INSERT INTO room(id, room_number, floor, hotel_id) VALUES (1, 1, 2, 1);
+INSERT INTO room(id, room_number, floor, hotel_id) VALUES (2, 2, 2, 1);
+INSERT INTO room(id, room_number, floor, hotel_id) VALUES (3, 3, 4, 1);
+INSERT INTO room(id, room_number, floor, hotel_id) VALUES (4, 4, 3, 1);

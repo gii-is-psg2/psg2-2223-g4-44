@@ -31,4 +31,9 @@ public class BookingService {
     public Booking save(Booking booking){
         return bookingRepository.save(booking);
     }
+
+    @Transactional(readOnly = true)
+    public Integer countBookingsAtRoom(Integer id) {
+        return bookingRepository.countBookingInRoom(id);
+    }
 }

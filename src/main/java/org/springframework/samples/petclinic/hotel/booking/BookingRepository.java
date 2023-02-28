@@ -12,4 +12,7 @@ public interface BookingRepository extends CrudRepository<Booking, Integer> {
     public Booking findById(@Param("id") int id);
 
     Collection<Booking> findAll();
+
+    @Query("SELECT COUNT(b) FROM Booking b where b.room.id=:roomId")
+    public Integer countBookingInRoom(@Param("roomId") Integer id);
 }

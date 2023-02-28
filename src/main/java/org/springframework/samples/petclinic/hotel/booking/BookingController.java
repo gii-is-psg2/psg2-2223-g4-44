@@ -44,7 +44,7 @@ public class BookingController {
     }
 
     @GetMapping("/booking/book/{room_id}")
-    public String bookingForm(@PathVariable("room_id") Integer roomId, ModelMap model) {
+    public String bookingForm(ModelMap model, @PathVariable("room_id") Integer roomId) {
         Room room = roomService.findById(roomId);
         Booking booking = new Booking();
         List<Pet> pets = ownerService.findPetsByOwner(ownerService.ownerSesion().getId());
@@ -56,21 +56,20 @@ public class BookingController {
     }
 
     @PostMapping("/booking/book/{room_id}")
-    public String bookingGenerate(ModelMap model, @Valid BookingAddModel booking,
-            @PathVariable("room_id") Integer roomId) {
+    public String bookingGenerate(@Valid BookingAddModel booking, @PathVariable("room_id") Integer roomId) {
         Room room = roomService.findById(roomId);
         Hotel hotel = room.getHotel();
         List<Pet> userPets = ownerService.findPetsByOwner(ownerService.ownerSesion().getId());
         Pet pet = userPets.stream().filter(x -> x.getName().equals(booking.getPet())).findFirst().get();
+        
         Booking newBooking = new Booking();
         newBooking.setRoom(room);
         newBooking.setHotel(hotel);
         newBooking.setPet(pet);
         newBooking.setEndDate(booking.getEndDate());
         newBooking.setStartDate(booking.getStartDate());
-        System.out.println(newBooking.getHotel().getFloors());
-        bookingService.save(newBooking);
 
+        bookingService.save(newBooking);
         return "redirect:/rooms";
     }
 }
