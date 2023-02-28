@@ -11,7 +11,7 @@
 
     <style>
         .table>thead>tr>th {
-            background-color: lightgreen;
+            background-color: rgb(255, 182, 92);
             color:#34302D;
         }
     </style>

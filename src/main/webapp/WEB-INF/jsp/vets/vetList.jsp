@@ -5,7 +5,18 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="vets">
-    <body style="background: #F5CBA7">   
+    <body style="background: #F5CBA7"> 
+
+        
+        <style>
+            .table>thead>tr>th {
+                background-color: rgb(255, 182, 92);
+                color:#34302D;
+            }
+        </style>
+        
+
+
     <h2>Veterinarians</h2>
 
     <table id="vetsTable" class="table table-striped">
