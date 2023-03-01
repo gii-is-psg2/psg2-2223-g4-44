@@ -49,17 +49,9 @@
                         <c:out value="${pet.name} "/>
                     </c:forEach>
                 </td>
-                
-      
-<!--
-                <td> 
-                    <c:out value="${owner.user.username}"/> 
+                <td>
+                    <a href="/owners/${owner.id}/delete"><button class="btn btn-danger">Borrar</button></a>
                 </td>
-                <td> 
-                   <c:out value="${owner.user.password}"/> 
-                </td> 
--->
-                
             </tr>
         </c:forEach>
         </tbody>
