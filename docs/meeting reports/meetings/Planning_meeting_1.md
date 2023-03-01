@@ -1,11 +1,13 @@
 # Planning Meeting 1
-- Fecha: 19/02/2023
 - Personas presentes:
     - Alberto Perea León
     - Alejandro Corral Gonzalez
     - Gabriel María Vacaro Goytia
     - Ignacio Warleta Murcia
     - Antonio José López Cubiles
+
+- Versiones:
+  - 19/02/2023 : reunión y primera redacción.
 
 
 ## Introducción
@@ -26,11 +28,11 @@ Organizar las tareas restantes del primer sprint. Dentro de ellas tenemos:
     - How to fix bugs on production
   - Versioning plicies
 - A2.8: implementar nuevas funcionalidades, entre ellas:
-  - Añadir la opcion de que pueda añadir detalles de reservar una habitacion para la mascota con fecha de inicio y final de la reserva.
-  - Cambios estéticos de la web en tonos marrones.
-  - Añadir creación y modificación de veterinarios.
-  - Añadir la funcionalidad de borrar del dominio cualquier elemento.
-  - Añadir traducción de la página web al español.
+  - a. Añadir la opcion de que pueda añadir detalles de reservar una habitacion para la mascota con fecha de inicio y final de la reserva.
+  - b. Cambios estéticos de la web en tonos marrones.
+  - c. Añadir creación y modificación de veterinarios.
+  - d. Añadir la funcionalidad de borrar del dominio cualquier elemento.
+  - e. Añadir traducción de la página web al español.
 - A2.9: desplegar la aplicación en App Engine.
 - A2.10: todos los informes de las reuniones y las planificaciones de los sprints.
 
