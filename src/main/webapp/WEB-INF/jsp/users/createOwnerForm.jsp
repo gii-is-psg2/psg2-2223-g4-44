@@ -7,10 +7,13 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="owners">
+
     <h2>
         <c:if test="${owner['new']}">New </c:if> Owner
     </h2>
+    
     <form:form modelAttribute="owner" class="form-horizontal" id="add-owner-form">
+        
         <div class="form-group has-feedback">
             <petclinic:inputField label="First Name" name="firstName"/>
             <petclinic:inputField label="Last Name" name="lastName"/>
@@ -33,4 +36,6 @@
             </div>
         </div>
     </form:form>
+
+    
 </petclinic:layout>
