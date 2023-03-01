@@ -27,7 +27,7 @@ El resto de apartados se repartieron de la siguiente forma:
 - A2.10 – Alejandro
 
 ## Diagrama Temporal Commits
-
+(Actualizar fotos una vez esté terminado el A2.8)
 ![Pantalla de computadora con letras Descripción generada automáticamente con confianza media](/docs/tech%20reports/images/commits-150223.png)
 ![Pantalla de computadora con letras Descripción generada automáticamente](/docs/tech%20reports/images/commits-100223.png)
 
@@ -44,5 +44,5 @@ Ignacio en este apartado tan solo tuvo problemas con las fotos, concretamente co
 
 ### A2.8 e
 
-Gabriel en este apartado tuvo una serie de problemas respecto al versionado de dependencias de internacionalizacion. Además, visual studio sugeria añadir una bateria de dependencias al pom para solucionar este problema de versionado; sin embargo, al añadirlas, surgia otro problema similar con el versionado. En este punto decidió pedir ayuda y Alberto salió al rescate solucionandolo en tan solo media hora. La solución fue añadir una dependencia de internacionalizacion, y a él no le salia ningun problema de versionado por lo que logró arreglarlo de forma correcta.
+Gabriel en este apartado tuvo una serie de problemas respecto al versionado de dependencias de internacionalizacion. Además, visual studio sugeria añadir una bateria de dependencias al pom para solucionar este problema de versionado; sin embargo, al añadirlas, surgia otro problema similar con el versionado. En este punto decidió pedir ayuda y Alberto salió al rescate solucionandolo en tan solo media hora. La solución fue tan simple como añadir una dependencia de internacionalizacion, pero jugó con la ventaja de que a él no le salia ningun problema de versionado por lo que logró arreglarlo.
 
