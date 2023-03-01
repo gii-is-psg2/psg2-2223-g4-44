@@ -24,6 +24,7 @@
             <th>City</th>
             <th style="width: 120px">Telephone</th>
             <th>Pets</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>

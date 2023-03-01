@@ -44,4 +44,10 @@ public class VetService {
 		return vetRepository.findAll();
 	}	
 
+	@Transactional
+	public void deleteVet(int vetId) {
+		Vet vet = vetRepository.findById(vetId).get();
+		vetRepository.delete(vet);
+	}
+
 }
