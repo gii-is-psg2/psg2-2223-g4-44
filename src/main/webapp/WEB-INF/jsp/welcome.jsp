@@ -8,7 +8,7 @@
     
 
     <center><p style="color: rgb(11, 18, 210)"><font SIZE="5">
-        Welcome to the PSG2-2223-G4-44 Petclinic
+        <h1><spring:message code="saludo" text="default"/></h1>
     </font>
     
 

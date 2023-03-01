@@ -52,13 +52,32 @@
 
 
 			<ul class="nav navbar-nav navbar-right">
+				<spring:message code="lang.change" text="default"/>:
+				<select id="locales">
+					<option value=""></option>
+					<option value="en"><spring:message code="lang.en" text="default"/></option>
+					<option value="esp"><spring:message code="lang.es" text="default"/></option>
+				</select>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+				</script>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					$("#locales").change(function () {
+						var selectedOption = $('#locales').val();
+						if (selectedOption != ''){
+							window.location.replace('language?lang=' + selectedOption);
+						}
+					});
+				});
+				</script>
+
 				<sec:authorize access="!isAuthenticated()">
 					<li><a href="<c:url value="/login" />">Login</a></li>
 					<li><a href="<c:url value="/users/new" />">Register</a></li>
 				</sec:authorize>
 				<sec:authorize access="isAuthenticated()">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span> 
+						data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span>ï¿½
 							<strong><sec:authentication property="name" /></strong> <span
 							class="glyphicon glyphicon-chevron-down"></span>
 					</a>
