@@ -34,6 +34,13 @@ import org.springframework.data.repository.Repository;
 public interface VetRepository extends Repository<Vet, Integer>{
 
 	/**
+	 * Save an <code>Owner</code> to the data store, either inserting or updating it.
+	 * @param vet the <code>Owner</code> to save
+	 * @see BaseEntity#isNew
+	 */
+	void save(Vet vet) throws DataAccessException;
+
+	/**
 	 * Retrieve all <code>Vet</code>s from the data store.
 	 * @return a <code>Collection</code> of <code>Vet</code>s
 	 */
