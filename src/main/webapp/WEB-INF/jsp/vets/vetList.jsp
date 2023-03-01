@@ -24,6 +24,7 @@
         <tr>
             <th>Name</th>
             <th>Specialties</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -38,6 +39,9 @@
                     </c:forEach>
                     <c:if test="${vet.nrOfSpecialties == 0}">none</c:if>
                 </td>
+                <td>
+                    <a href="/vets/${vet.id}/delete"><button class="btn btn-danger">Borrar</button></a>
+                </td>        
             </tr>
         </c:forEach>
         </tbody>

@@ -38,16 +38,14 @@ import org.springframework.transaction.annotation.Transactional;
 public class OwnerService {
 
 	private OwnerRepository ownerRepository;	
-	
-	@Autowired
 	private UserService userService;
-	
-	@Autowired
 	private AuthoritiesService authoritiesService;
 
 	@Autowired
-	public OwnerService(OwnerRepository ownerRepository) {
+	public OwnerService(OwnerRepository ownerRepository, UserService userService, AuthoritiesService authoritiesService) {
 		this.ownerRepository = ownerRepository;
+		this.userService = userService;
+		this.authoritiesService = authoritiesService;
 	}	
 
 	@Transactional(readOnly = true)
@@ -81,6 +79,12 @@ public class OwnerService {
 		String name = authentication.getName();
 		Owner owner = this.ownerRepository.findByUsername(this.userService.findUser(name).orElse(null));
 		return owner;
+	}
+
+	@Transactional
+	public void deleteOwner(int ownerId) {
+		Owner owner = ownerRepository.findById(ownerId);
+		ownerRepository.delete(owner);
 	}
 
 }

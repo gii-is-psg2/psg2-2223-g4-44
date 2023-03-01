@@ -26,6 +26,7 @@
             <th>City</th>
             <th style="width: 120px">Telephone</th>
             <th>Pets</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -51,17 +52,9 @@
                         <c:out value="${pet.name} "/>
                     </c:forEach>
                 </td>
-                
-      
-<!--
-                <td> 
-                    <c:out value="${owner.user.username}"/> 
+                <td>
+                    <a href="/owners/${owner.id}/delete"><button class="btn btn-danger">Borrar</button></a>
                 </td>
-                <td> 
-                   <c:out value="${owner.user.password}"/> 
-                </td> 
--->
-                
             </tr>
         </c:forEach>
         </tbody>
