@@ -50,8 +50,9 @@
 
                     <sec:authorize access="hasAuthority('admin')">
                         <a class="btn btn-default" href="/vets/${vet.id}/edit">Edit Vet</a>
+                        <a href="/vets/${vet.id}/delete"><button class="btn btn-danger">Borrar</button></a>
                     </sec:authorize>
-                    <a href="/vets/${vet.id}/delete"><button class="btn btn-danger">Borrar</button></a>
+                    
                 </td>        
 
             </tr>

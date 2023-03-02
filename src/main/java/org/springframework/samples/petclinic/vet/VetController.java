@@ -146,7 +146,7 @@ public class VetController {
 	}
 
 	@GetMapping(value = "/vets/{vetId}/delete")
-	public String deleteVet(@PathParam("vetId") int vetId) {
+	public String deleteVet(@PathVariable("vetId") int vetId) {
 		vetService.deleteVet(vetId);
 		return "redirect:/vets";
 	}
