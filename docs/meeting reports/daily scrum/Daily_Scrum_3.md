@@ -11,8 +11,10 @@
 ## Introducción
 Este documento representa un resumen daily scrum llevado a cabo en la fecha dada. Se anotará de forma breve cada uno de los cambios que han realizado los integrantes del grupo hasta la fecha.
 
-## Contenido
+## Definición de hecho
+_La tarea asignada se considerará 'hecha' cuando el código se haya escrito, se hayan solucionado los errores encontrados, se hayan documentado los cambios realizados y se haya obtenido la aprobación del equipo._
 
+## Contenido
 - Ignacio: hecha casi al completo pero falta añadir una foto (task-A2.8.b).
 - Gabriel: internacionalizando la página (task-A2.8.e).
 - Alberto: implementar todo el pet hotel, con vistas de las diferentes habitaciones disponibles y un botón que permite reservar la habitación en función de si ya tiene una reserva o no (task-A2.8.a).
