@@ -16,9 +16,15 @@
 package org.springframework.samples.petclinic.vet;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.dao.DataAccessException;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
+import org.springframework.data.repository.query.Param;
+
+import org.springframework.data.repository.CrudRepository;
+
 
 /**
  * Repository class for <code>Vet</code> domain objects All method names are compliant
@@ -31,12 +37,28 @@ import org.springframework.data.repository.Repository;
  * @author Sam Brannen
  * @author Michael Isvy
  */
-public interface VetRepository extends Repository<Vet, Integer>{
+public interface VetRepository extends CrudRepository<Vet, Integer>{
+
+	/**
+	 * Save an <code>Owner</code> to the data store, either inserting or updating it.
+	 * @param vet the <code>Owner</code> to save
+	 * @see BaseEntity#isNew
+	 */
+	public Vet save(Vet vet) throws DataAccessException;
 
 	/**
 	 * Retrieve all <code>Vet</code>s from the data store.
 	 * @return a <code>Collection</code> of <code>Vet</code>s
 	 */
 	Collection<Vet> findAll() throws DataAccessException;
+
+	@Query("SELECT vet FROM Vet vet WHERE vet.id =:id")
+    public Vet findById(@Param("id")int id);
+
+	@Query("SELECT specialties FROM Specialty specialties")
+    public List<Specialty> listSpecialties();
+
+	@Query("SELECT specialty FROM Specialty specialty WHERE specialty.id = :id")
+    public Specialty findSpecialtyById(@Param("id")int id);
 
 }

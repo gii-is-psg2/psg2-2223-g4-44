@@ -6,6 +6,7 @@
 
 
 <petclinic:layout pageName="owners">
+    <body style="background: #F5CBA7">
     <jsp:attribute name="customScript">
         <script>
             $(function () {
@@ -65,5 +66,5 @@
             </c:forEach>
         </table>
     </jsp:body>
-
+</body>
 </petclinic:layout>

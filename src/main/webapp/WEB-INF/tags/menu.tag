@@ -22,22 +22,21 @@
 		<div class="navbar-collapse collapse" id="main-navbar">
 			<ul class="nav navbar-nav">
 
-				<petclinic:menuItem active="${name eq 'home'}" url="/"
-					title="home page">
-					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-					<span>Home</span>
+				<petclinic:menuItem active="${name eq 'home'}" url="/" title="<spring:message code='botonHome'/>">
+  					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+  					<spring:message code='botonHome'/>
 				</petclinic:menuItem>
 
 				<petclinic:menuItem active="${name eq 'owners'}" url="/owners/find"
-					title="find owners">
+					title="<spring:message code='botonOwner'/>">
 					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					<span>Find owners</span>
+					<spring:message code='botonOwner'/>
 				</petclinic:menuItem>
 
 				<petclinic:menuItem active="${name eq 'vets'}" url="/vets"
-					title="veterinarians">
+					title="<spring:message code='botonVets'/>">
 					<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-					<span>Veterinarians</span>
+					<spring:message code='botonVets'/>
 				</petclinic:menuItem>
 
 				<petclinic:menuItem active="${name eq 'Pet Hotel'}" url="/rooms"
@@ -58,6 +57,25 @@
 
 
 			<ul class="nav navbar-nav navbar-right">
+				<spring:message code="lang.change" text="default"/>:
+				<select id="locales">
+					<option value=""></option>
+					<option value="en"><spring:message code="lang.en" text="default"/></option>
+					<option value="esp"><spring:message code="lang.es" text="default"/></option>
+				</select>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+				</script>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					$("#locales").change(function () {
+						var selectedOption = $('#locales').val();
+						if (selectedOption != ''){
+							window.location.replace('language?lang=' + selectedOption);
+						}
+					});
+				});
+				</script>
+
 				<sec:authorize access="!isAuthenticated()">
 					<li><a href="<c:url value="/login" />">Login</a></li>
 					<li><a href="<c:url value="/users/new" />">Register</a></li>
