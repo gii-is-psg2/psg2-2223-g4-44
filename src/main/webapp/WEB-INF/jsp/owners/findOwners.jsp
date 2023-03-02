@@ -10,7 +10,10 @@
 
 <petclinic:layout pageName="owners">
 
-<h2><spring:message code="botonOwner" text="default"/></h2>
+
+    <body style="background: #F5CBA7">
+
+    <h2><spring:message code="botonOwner" text="default"/></h2>
 
 
     
@@ -42,5 +45,7 @@
              <spring:message code="addOwner"/>
         </a>
 	</sec:authorize>
+
+    </body>
 	
 </petclinic:layout>

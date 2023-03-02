@@ -7,6 +7,8 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="owners">
+
+    <body style="background: #F5CBA7">
     <h2>
         <c:if test="${owner['new']}"><span><spring:message code="new"/></span>&nbsp;</c:if>
         <span><spring:message code="owner"/></span>
@@ -38,4 +40,5 @@
             </div>
         </div>
     </form:form>
+    </body>
 </petclinic:layout>

@@ -5,10 +5,13 @@
 <!-- %@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %-->  
 
 <petclinic:layout pageName="home">
+
+<body style="background: #F5CBA7">
     
 
-    <center><p style="color: rgb(11, 18, 210)"><font SIZE="5">
+    <center><p style="color: rgb(149, 116, 32)"><font SIZE="5">
         <h1><spring:message code="saludo" text="default"/></h1>
+
     </font>
     
 
@@ -28,6 +31,7 @@
 
     </font></center><br/>
 
+    
     <div class="row">
         <div class="col-md-12">
             <spring:url value="/resources/images/patano1.jpg" htmlEscape="true" var="petsImage"/>
@@ -35,5 +39,6 @@
         </div>
     </div>
 
+</body>
 
 </petclinic:layout>
