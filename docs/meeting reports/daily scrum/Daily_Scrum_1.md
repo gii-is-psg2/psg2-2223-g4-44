@@ -1,6 +1,6 @@
 # Daily Scrum 1
 - Fecha: 15/02/2023
-- Personas presentes:
+- Developers presentes:
     - Alberto Perea León
     - Alejandro Corral Gonzalez
     - Gabriel María Vacaro Goytia
@@ -11,8 +11,10 @@
 ## Introducción
 Este documento representa un resumen daily scrum llevado a cabo en la fecha dada. Se anotará de forma breve cada uno de los cambios que han realizado los integrantes del grupo hasta la fecha.
 
-## Contenido
+## Definición de hecho
+_La tarea asignada se considerará 'hecha' cuando el código se haya escrito, se hayan solucionado los errores encontrados, se hayan documentado los cambios realizados y se haya obtenido la aprobación del equipo._
 
+## Contenido
 - Alberto: cambiar el color del header de la tabla de owner (task-2.5.a y task-2.5.d)
 - Alejandro: cambiar el info yam y el pom y añadirse al pom (task-2.5.a, task-2.5.b y task-2.5.h). Tuvo problemas con task-2.5.b, el pom no deja de dar fallo.
 - Gabriel: cambiar la imagen de bienvenida y añadirse al pom (task-2.5.a y task-2.5.f).

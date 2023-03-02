@@ -16,11 +16,15 @@
 package org.springframework.samples.petclinic.owner;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.samples.petclinic.pet.Pet;
 import org.springframework.samples.petclinic.user.AuthoritiesService;
 import org.springframework.samples.petclinic.user.UserService;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -34,16 +38,14 @@ import org.springframework.transaction.annotation.Transactional;
 public class OwnerService {
 
 	private OwnerRepository ownerRepository;	
-	
-	@Autowired
 	private UserService userService;
-	
-	@Autowired
 	private AuthoritiesService authoritiesService;
 
 	@Autowired
-	public OwnerService(OwnerRepository ownerRepository) {
+	public OwnerService(OwnerRepository ownerRepository, UserService userService, AuthoritiesService authoritiesService) {
 		this.ownerRepository = ownerRepository;
+		this.userService = userService;
+		this.authoritiesService = authoritiesService;
 	}	
 
 	@Transactional(readOnly = true)
@@ -56,6 +58,11 @@ public class OwnerService {
 		return ownerRepository.findByLastName(lastName);
 	}
 
+	@Transactional(readOnly = true)
+	public List<Pet> findPetsByOwner(Integer id) throws DataAccessException {
+		return ownerRepository.findPetsByOwner(id);
+	}
+
 	@Transactional
 	public void saveOwner(Owner owner) throws DataAccessException {
 		//creating owner
@@ -64,6 +71,20 @@ public class OwnerService {
 		userService.saveUser(owner.getUser());
 		//creating authorities
 		authoritiesService.saveAuthorities(owner.getUser().getUsername(), "owner");
-	}		
+	}
+
+	@Transactional
+	public Owner ownerSesion() throws DataAccessException {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		String name = authentication.getName();
+		Owner owner = this.ownerRepository.findByUsername(this.userService.findUser(name).orElse(null));
+		return owner;
+	}
+
+	@Transactional
+	public void deleteOwner(int ownerId) {
+		Owner owner = ownerRepository.findById(ownerId);
+		ownerRepository.delete(owner);
+	}
 
 }

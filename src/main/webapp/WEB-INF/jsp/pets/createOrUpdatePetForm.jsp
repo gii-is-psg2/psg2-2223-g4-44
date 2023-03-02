@@ -5,6 +5,7 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="owners">
+    <body style="background: #F5CBA7">
     <jsp:attribute name="customScript">
         <script>
             $(function () {
@@ -14,7 +15,8 @@
     </jsp:attribute>
     <jsp:body>
         <h2>
-            <c:if test="${pet['new']}">New </c:if> Pet
+            <c:if test="${pet['new']}"><span><spring:message code="new"/></span>&nbsp;</c:if>
+            <span><spring:message code="pet"/></span>
         </h2>
         <form:form modelAttribute="pet"
                    class="form-horizontal">
@@ -48,4 +50,5 @@
         <c:if test="${!pet['new']}">
         </c:if>
     </jsp:body>
+    </body>
 </petclinic:layout>

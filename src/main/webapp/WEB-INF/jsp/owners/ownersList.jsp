@@ -7,23 +7,28 @@
 
 <petclinic:layout pageName="owners">
 
+    <body style="background: #F5CBA7">
+
     <style>
         .table>thead>tr>th {
-            background-color: lightgreen;
+            background-color: rgb(255, 182, 92);
             color:#34302D;
         }
     </style>
 
-    <h2>Owners</h2>
+    <h2><spring:message code="owners"/></h2>
 
     <table id="ownersTable" class="table table-striped">
         <thead>
         <tr>
-            <th style="width: 150px;">Name</th>
-            <th style="width: 200px;">Address</th>
-            <th>City</th>
-            <th style="width: 120px">Telephone</th>
-            <th>Pets</th>
+
+            <th style="width: 150px;"> <spring:message code="name"/></th>
+            <th style="width: 200px;"> <spring:message code="address"/></th>
+            <th><spring:message code="city"/></th>
+            <th style="width: 120px"> <spring:message code="telephone"/></th>
+            <th><spring:message code="pets"/></th>
+            <th>Action</th>
+
         </tr>
         </thead>
         <tbody>
@@ -49,19 +54,13 @@
                         <c:out value="${pet.name} "/>
                     </c:forEach>
                 </td>
-                
-      
-<!--
-                <td> 
-                    <c:out value="${owner.user.username}"/> 
+                <td>
+                    <a href="/owners/${owner.id}/delete"><button class="btn btn-danger">Borrar</button></a>
                 </td>
-                <td> 
-                   <c:out value="${owner.user.password}"/> 
-                </td> 
--->
-                
             </tr>
         </c:forEach>
         </tbody>
     </table>
+
+    </body>
 </petclinic:layout>

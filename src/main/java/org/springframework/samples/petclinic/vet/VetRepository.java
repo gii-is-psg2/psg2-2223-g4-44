@@ -23,6 +23,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.query.Param;
 
+import org.springframework.data.repository.CrudRepository;
+
 
 /**
  * Repository class for <code>Vet</code> domain objects All method names are compliant
@@ -35,7 +37,7 @@ import org.springframework.data.repository.query.Param;
  * @author Sam Brannen
  * @author Michael Isvy
  */
-public interface VetRepository extends Repository<Vet, Integer>{
+public interface VetRepository extends CrudRepository<Vet, Integer>{
 
 	/**
 	 * Save an <code>Owner</code> to the data store, either inserting or updating it.
