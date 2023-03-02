@@ -69,7 +69,7 @@ public class VetService {
 	
 	@Transactional
 	public void deleteVet(int vetId) {
-		Vet vet = vetRepository.findById(vetId).get();
+		Vet vet = vetRepository.findById(vetId);
 		vetRepository.delete(vet);
 	}
 

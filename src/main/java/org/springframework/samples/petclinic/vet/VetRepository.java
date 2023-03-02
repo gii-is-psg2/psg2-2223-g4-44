@@ -44,7 +44,7 @@ public interface VetRepository extends CrudRepository<Vet, Integer>{
 	 * @param vet the <code>Owner</code> to save
 	 * @see BaseEntity#isNew
 	 */
-	void save(Vet vet) throws DataAccessException;
+	public Vet save(Vet vet) throws DataAccessException;
 
 	/**
 	 * Retrieve all <code>Vet</code>s from the data store.
@@ -54,10 +54,6 @@ public interface VetRepository extends CrudRepository<Vet, Integer>{
 
 	@Query("SELECT vet FROM Vet vet WHERE vet.id =:id")
     public Vet findById(@Param("id")int id);
-
-
-
-
 
 	@Query("SELECT specialties FROM Specialty specialties")
     public List<Specialty> listSpecialties();
