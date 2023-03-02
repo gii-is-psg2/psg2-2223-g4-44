@@ -21,11 +21,14 @@
     <table id="ownersTable" class="table table-striped">
         <thead>
         <tr>
+
             <th style="width: 150px;"> <spring:message code="name"/></th>
             <th style="width: 200px;"> <spring:message code="address"/></th>
             <th><spring:message code="city"/></th>
             <th style="width: 120px"> <spring:message code="telephone"/></th>
             <th><spring:message code="pets"/></th>
+            <th>Action</th>
+
         </tr>
         </thead>
         <tbody>
@@ -51,17 +54,9 @@
                         <c:out value="${pet.name} "/>
                     </c:forEach>
                 </td>
-                
-      
-<!--
-                <td> 
-                    <c:out value="${owner.user.username}"/> 
+                <td>
+                    <a href="/owners/${owner.id}/delete"><button class="btn btn-danger">Borrar</button></a>
                 </td>
-                <td> 
-                   <c:out value="${owner.user.password}"/> 
-                </td> 
--->
-                
             </tr>
         </c:forEach>
         </tbody>

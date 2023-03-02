@@ -16,11 +16,15 @@
 package org.springframework.samples.petclinic.vet;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.samples.petclinic.user.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Map;
+
+import javax.websocket.server.PathParam;
 
 /**
  * @author Juergen Hoeller
@@ -39,7 +43,7 @@ public class VetController {
 	}
 
 	@GetMapping(value = { "/vets" })
-	public String showVetList(Map<String, Object> model) {
+	public String showVetList(Map<String, Object> model, @ModelAttribute("logedUser") User logedUser) {
 		// Here we are returning an object of type 'Vets' rather than a collection of Vet
 		// objects
 		// so it is simpler for Object-Xml mapping
@@ -57,6 +61,12 @@ public class VetController {
 		Vets vets = new Vets();
 		vets.getVetList().addAll(this.vetService.findVets());
 		return vets;
+	}
+
+	@GetMapping(value = "/vets/{vetId}/delete")
+	public String deleteVet(@PathParam("vetId") int vetId) {
+		vetService.deleteVet(vetId);
+		return "redirect:/vets";
 	}
 
 }
