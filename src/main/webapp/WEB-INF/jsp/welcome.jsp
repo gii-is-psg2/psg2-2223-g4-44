@@ -10,29 +10,25 @@
     
 
     <center><p style="color: rgb(149, 116, 32)"><font SIZE="5">
-        Welcome to the PSG2-2223-G4-44 Petclinic
+        <h1><spring:message code="saludo" text="default"/></h1>
+
     </font>
     
 
     <center><p style="color: black"><font SIZE="2">
-
-        Bienvenidos,
-desde la Clinica Veterinaria Bonn queremos brindar un trato diferencial y personalizado a su mascota, mas de 15 anyos de experiencia nos avalan. Encontrara nuestra clinica veterinaria en Madrid centro, en el corazon de Parque de las Avenidas, en la Avenida de Bonn numero 12.
+        <h2><spring:message code="presentacion" text="default"/></h2>
 </p>
     </font></center><br/>
 
     <center><p style="color: black"><font SIZE="2">
 
-Nuestro servicio veterinario para perros y gatos se basa en la medicina preventiva con el fin de proteger a su mascota de diferentes enfermedades antes de la aparicion de los primeros sintomas. Para ello, ofrecemos la vacunacion de cachorros, como tambien la de perros y gatos adultos.
-Basandonos en este principio de prevencion, destacamos tambien la importancia de la desparasitacion interna y externa de forma periodica en su mascota.
+        <h3><spring:message code="introduccion" text="default"/></h3>
 </p>
     </font></center><br/>
 
     <center><p style="color: black"><font SIZE="2">
+        <h3><spring:message code="dedicacion" text="default"/></h3>
 
-Dentro del servicio de consulta llevamos a cabo la implantacion de microchip, basico para la seguridad de los animales. Paralelamente, contamos con las mas completas analiticas de orina y sangre, de este modo respaldamos de manera solida las revisiones periodicas, que a modo de prevencion, logran que su perro o gato pueda disfrutar de una vida en plena salud.
-
-La alimentacion es otro de los pilares en los cuales debemos basarnos para asegurar una vida saludable a su mascota. En Clinica Veterinaria Bonn le ofrecemos un asesoramiento nutricional especifico para cada mascota en funcion de sus necesidades, contando con piensos de alta gama y dietas especificas para cada caso.</p>
     </font></center><br/>
 
     
