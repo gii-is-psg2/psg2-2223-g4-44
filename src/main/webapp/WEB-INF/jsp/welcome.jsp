@@ -19,16 +19,13 @@
 
     <center><p style="color: black"><font SIZE="2">
 
-Nuestro servicio veterinario para perros y gatos se basa en la medicina preventiva con el fin de proteger a su mascota de diferentes enfermedades antes de la aparicion de los primeros sintomas. Para ello, ofrecemos la vacunacion de cachorros, como tambien la de perros y gatos adultos.
-Basandonos en este principio de prevencion, destacamos tambien la importancia de la desparasitacion interna y externa de forma periodica en su mascota.
+        <h3><spring:message code="introduccion" text="default"/></h3>
 </p>
     </font></center><br/>
 
     <center><p style="color: black"><font SIZE="2">
+        <h3><spring:message code="dedicacion" text="default"/></h3>
 
-Dentro del servicio de consulta llevamos a cabo la implantacion de microchips, basico para la seguridad de los animales. Paralelamente, contamos con las mas completas analiticas de orina y sangre, de este modo respaldamos de manera solida las revisiones periodicas, que a modo de prevencion, logran que su perro o gato pueda disfrutar de una vida en plena salud.
-
-La alimentacion es otro de los pilares en los cuales debemos basarnos para asegurar una vida saludable a su mascota. En Clinica Veterinaria Bonn le ofrecemos un asesoramiento nutricional especifico para cada mascota en funcion de sus necesidades, contando con piensos de alta gama y dietas especificas para cada caso.</p>
     </font></center><br/>
 
     <div class="row">

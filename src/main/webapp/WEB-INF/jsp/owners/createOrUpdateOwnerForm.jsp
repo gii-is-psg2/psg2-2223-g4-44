@@ -8,11 +8,13 @@
 
 <petclinic:layout pageName="owners">
     <h2>
-        <c:if test="${owner['new']}">New </c:if> Owner
+        <c:if test="${owner['new']}"><span><spring:message code="new"/></span>&nbsp;</c:if>
+        <span><spring:message code="owner"/></span>
     </h2>
     <form:form modelAttribute="owner" class="form-horizontal" id="add-owner-form">
         <div class="form-group has-feedback">
-            <petclinic:inputField label="First Name" name="firstName"/>
+           
+            <petclinic:inputField label= "First Name" name="firstName"/>
             <petclinic:inputField label="Last Name" name="lastName"/>
             <petclinic:inputField label="Address" name="address"/>
             <petclinic:inputField label="City" name="city"/>
@@ -24,10 +26,13 @@
             <div class="col-sm-offset-2 col-sm-10">
                 <c:choose>
                     <c:when test="${owner['new']}">
-                        <button class="btn btn-default" type="submit">Add Owner</button>
+                        <button class="btn btn-default" type="submit">
+                            <spring:message code="addOwner"/></button>
                     </c:when>
                     <c:otherwise>
-                        <button class="btn btn-default" type="submit">Update Owner</button>
+                        <button class="btn btn-default" type="submit">
+                            <spring:message code="updateOwner"/>
+                        </button>
                     </c:otherwise>
                 </c:choose>
             </div>

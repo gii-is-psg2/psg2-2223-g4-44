@@ -14,16 +14,16 @@
         }
     </style>
 
-    <h2>Owners</h2>
+    <h2><spring:message code="owners"/></h2>
 
     <table id="ownersTable" class="table table-striped">
         <thead>
         <tr>
-            <th style="width: 150px;">Name</th>
-            <th style="width: 200px;">Address</th>
-            <th>City</th>
-            <th style="width: 120px">Telephone</th>
-            <th>Pets</th>
+            <th style="width: 150px;"> <spring:message code="name"/></th>
+            <th style="width: 200px;"> <spring:message code="address"/></th>
+            <th><spring:message code="city"/></th>
+            <th style="width: 120px"> <spring:message code="telephone"/></th>
+            <th><spring:message code="pets"/></th>
         </tr>
         </thead>
         <tbody>
