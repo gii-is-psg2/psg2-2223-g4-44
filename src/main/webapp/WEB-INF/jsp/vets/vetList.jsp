@@ -13,6 +13,7 @@
         <tr>
             <th>Name</th>
             <th>Specialties</th>
+            <th>Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -24,8 +25,15 @@
                 <td>
                     <c:forEach var="specialty" items="${vet.specialties}">
                         <c:out value="${specialty.name} "/>
+
                     </c:forEach>
+
                     <c:if test="${vet.nrOfSpecialties == 0}">none</c:if>
+                </td>
+                <td>
+                    <sec:authorize access="hasAuthority('admin')">
+                        <a class="btn btn-default" href="/vets/${vet.id}/edit">Edit Vet</a>
+                    </sec:authorize>
                 </td>
             </tr>
         </c:forEach>
@@ -35,6 +43,8 @@
     <sec:authorize access="hasAuthority('admin')">
 		<a class="btn btn-default" href='<spring:url value="/vets/new" htmlEscape="true"/>'>Add Vet</a>
     </sec:authorize>
+
+   
 
     
 

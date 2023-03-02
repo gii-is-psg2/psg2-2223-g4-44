@@ -17,7 +17,10 @@ INSERT INTO vets(id, first_name,last_name) VALUES (6, 'Sharon', 'Jenkins');
 
 INSERT INTO specialties VALUES (1, 'radiology');
 INSERT INTO specialties VALUES (2, 'surgery');
-INSERT INTO specialties VALUES (3, 'dentistry');
+INSERT INTO specialties VALUES (3, 'oncology');
+INSERT INTO specialties VALUES (4, 'psicologist');
+INSERT INTO specialties VALUES (5, 'medic');
+INSERT INTO specialties VALUES (6, 'dentistry');
 
 INSERT INTO vet_specialties VALUES (2, 1);
 INSERT INTO vet_specialties VALUES (3, 2);
