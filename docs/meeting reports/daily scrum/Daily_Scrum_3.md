@@ -1,4 +1,4 @@
-# Daily Scrum X
+# Daily Scrum 3
 - Fecha: 28/02/23
 - Developers presentes:
     - Alberto Perea León
