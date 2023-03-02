@@ -5,6 +5,7 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="vets">
+
     <body style="background: #F5CBA7"> 
 
         
@@ -17,13 +18,14 @@
         
 
 
-    <h2>Veterinarians</h2>
+    <h2><spring:message code="botonVets"/></h2>
+
 
     <table id="vetsTable" class="table table-striped">
         <thead>
         <tr>
-            <th>Name</th>
-            <th>Specialties</th>
+            <th> <spring:message code="name"/></th>
+            <th><spring:message code="specialities"/></th>
         </tr>
         </thead>
         <tbody>
