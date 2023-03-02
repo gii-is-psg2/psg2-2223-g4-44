@@ -6,7 +6,10 @@
                     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
                         <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
+                        
+
                             <petclinic:layout pageName="booking">
+                                <body style="background: #F5CBA7"> 
 
                                 <jsp:attribute name="customScript">
                                     <script>
@@ -30,4 +33,5 @@
                                         </div>
                                     </form:form>
                                 </jsp:body>
+                                </body>
                             </petclinic:layout>
